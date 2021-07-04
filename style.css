@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 50px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contrato-main{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(250, 245, 237);
+}

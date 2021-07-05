@@ -27,40 +27,40 @@ function monthletter(mes) {
     let letter = "A"
     switch(key){
         case 1:
-            letter = "F";
-        break
-        case 2:
             letter = "G";
         break
-        case 3:
+        case 2:
             letter = "H";
         break
-        case 4:
+        case 3:
             letter = "J";
         break
-        case 5:
+        case 4:
             letter = "K";
         break
-        case 6:
+        case 5:
             letter = "M";
         break
-        case 7:
+        case 6:
             letter = "N";
         break
-        case 8:
+        case 7:
             letter = "Q";
         break
-        case 9:
+        case 8:
             letter = "U";
         break
-        case 10:
+        case 9:
             letter = "V";
         break
-        case 11:
+        case 10:
             letter = "X";
         break
-        case 12:
+        case 11:
             letter = "Z";
+        break
+        case 12:
+            letter = "F";
         break
     }
     return letter

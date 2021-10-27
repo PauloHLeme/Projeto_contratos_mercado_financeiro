@@ -6,15 +6,21 @@ const ano = today.getFullYear()
 function start() {
     data()
     escritor()
-
+    wednesdaytofifteen()
 }
 
 function escritor(){
-    let output = document.body.querySelector('#wdo')
+    let indice = document.body.querySelector('#win')
+    let dolar = document.body.querySelector('#wdo')
     const shortyear = ano.toString().substr(-2)
-    output.innerHTML = "WDO"
-    output.innerHTML += monthletter(mes)
-    output.innerHTML += shortyear
+
+    indice.innerHTML = 'WIN'
+    indice.innerHTML+= dolarletter(mes)
+    indice.innerHTML+= shortyear
+    dolar.innerHTML = "WDO"
+    dolar.innerHTML += dolarletter(mes)
+    dolar.innerHTML += shortyear
+
 }
 
 function data() {
@@ -22,7 +28,7 @@ function data() {
     return today
 }
 
-function monthletter(mes) {
+function dolarletter(mes) {
     const key = mes
     let letter = "A"
     switch(key){
@@ -64,6 +70,19 @@ function monthletter(mes) {
         break
     }
     return letter
+}
+
+function iseven(mes){
+    if(mes%2 == 0){
+    }
+}
+
+function wednesdaytofifteen(){
+    const diaquinze = new Date()
+    diaquinze.setDate(15)
+    diaquinze.getDay()
+
+    return console.log(diaquinze.getDay())
 }
 
 start()
